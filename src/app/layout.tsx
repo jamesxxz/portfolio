@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 import "./globals.css";
 
-const open_sans = Open_Sans({ weight: "400", subsets: ["latin"] });
+const fira_code = Fira_Code({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "James Liu's porfolio",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={open_sans.className}>{children}</body>
+      <body className={fira_code.className}>{children}</body>
     </html>
   );
 }

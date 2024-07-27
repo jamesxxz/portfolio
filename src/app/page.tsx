@@ -1,37 +1,15 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import Landing from "./landing";
+import About from "./about";
 import NavBar from "./navbar";
 
 export default function Home() {
   return (
     <div>
-      <NavBar></NavBar>
+      <NavBar />
       <main>
-        <div>
-          <div className="">
-            <img
-              src="profile-pic.jpg"
-              alt="profile-pic"
-              className="rounded-lg"
-            />
-          </div>
-
-          <div className="grid auto-rows-max items-start gap-4 lg:col-span-2 lg:gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Bio</CardTitle>
-                <CardDescription>Hi I am James Liu</CardDescription>
-              </CardHeader>
-              <CardContent></CardContent>
-            </Card>
-
-            {/* <Card>
+        <Landing />
+        <About></About>
+        {/* <Card>
                   <CardHeader>
                     <CardTitle>Skills</CardTitle>
                     <CardDescription>
@@ -55,14 +33,7 @@ export default function Home() {
                   <CardContent></CardContent>
                 </Card>
 
-                <Card>
-                  <CardHeader>
-                    <CardTitle>About Me</CardTitle>
-                  </CardHeader>
-                  <CardContent></CardContent>
-                </Card> */}
-          </div>
-        </div>
+               */}
       </main>
     </div>
   );
