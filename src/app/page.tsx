@@ -1,5 +1,6 @@
 import Landing from "./landing";
 import About from "./about";
+import Skills from "./skills";
 import NavBar from "./navbar";
 
 export default function Home() {
@@ -9,15 +10,8 @@ export default function Home() {
       <main>
         <Landing />
         <About></About>
-        {/* <Card>
-                  <CardHeader>
-                    <CardTitle>Skills</CardTitle>
-                    <CardDescription>
-                      Lipsum dolor sit amet, consectetur adipiscing elit
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent></CardContent>
-                </Card>
+        <Skills></Skills>
+        {/*
 
                 <Card>
                   <CardHeader>
