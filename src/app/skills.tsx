@@ -20,7 +20,7 @@ import { Icon } from "@iconify/react";
 
 export default function Skills() {
   return (
-    <div className="mt-[50px] mb-[30px] flex flex-col items-center">
+    <div className="mt-[20px] mb-[30px] flex flex-col items-center">
       <div className="text-2xl mr-[980px]">Skills</div>
       <Separator className="w-[1100px] mt-5"></Separator>
       <div className="w-[950px] h-[200px] mt-[50px]">

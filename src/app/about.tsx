@@ -13,7 +13,7 @@ import { Microscope, Share2 } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="mt-[200px] mb-[30px] flex flex-col items-center">
+    <div className="mt-[180px] mb-[30px] flex flex-col items-center">
       <div className="text-2xl mr-[980px]">About Me</div>
       <Separator className="w-[1100px] mt-5"></Separator>
 
@@ -36,7 +36,7 @@ export default function About() {
           </CardFooter>
         </Card>
 
-        <Card className="absolute top-[230px] left-[400px] w-[560px] h-[320px] z-20">
+        <Card className="absolute top-[230px] left-[400px] w-[560px] h-[300px] z-20">
           <CardHeader>
             <CardTitle className="text-xl flex flex-row gap-4">
               <Share2 />
