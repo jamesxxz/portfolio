@@ -17,7 +17,7 @@ export default function About() {
       <div className="text-2xl mr-[980px]">About Me</div>
       <Separator className="w-[1100px] mt-5"></Separator>
 
-      <div className="relative w-[950px] h-[600px] mt-[40px]">
+      <div className="relative w-[950px] h-[600px] mt-[50px]">
         <Card className="absolute top-0 left-0 w-[500px] h-[270px] z-10">
           <CardHeader>
             <CardTitle className="text-xl flex flex-row gap-4">

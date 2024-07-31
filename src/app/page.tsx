@@ -1,7 +1,8 @@
+import NavBar from "./navbar";
 import Landing from "./landing";
 import About from "./about";
 import Skills from "./skills";
-import NavBar from "./navbar";
+import Projects from "./project";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Landing />
         <About></About>
         <Skills></Skills>
+        <Projects></Projects>
         {/*
 
                 <Card>
