@@ -3,8 +3,8 @@ import { Separator } from "@/components/ui/separator";
 import { Icon } from "@iconify/react";
 
 export default function Contacts() {
-  function handleContactClicked(projectUrl: string) {
-    window.open(projectUrl, "_blank", "noopener,noreferrer");
+  function handleContactClicked(contactUrl: string) {
+    window.open(contactUrl, "_blank", "noopener,noreferrer");
   }
 
   return (
