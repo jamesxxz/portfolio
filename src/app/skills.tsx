@@ -34,7 +34,7 @@ export default function Skills() {
         >
           <CarouselContent>
             {tech_skills.map((skill) => (
-              <CarouselItem className="basis-1/3">
+              <CarouselItem key={skill.title} className="basis-1/3">
                 <div>
                   <Card className="h-[120px]">
                     <CardHeader className="mt-[-10px]">
@@ -45,7 +45,11 @@ export default function Skills() {
                     <CardFooter className="mt-[10px]">
                       <div className="flex gap-1">
                         {skill.elems.map((elem) => (
-                          <Icon icon={elem.icon} className="size-7"></Icon>
+                          <Icon
+                            key={elem.name}
+                            icon={elem.icon}
+                            className="size-7"
+                          ></Icon>
                         ))}
                       </div>
                     </CardFooter>

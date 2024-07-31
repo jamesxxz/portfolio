@@ -9,7 +9,7 @@ export default function Contacts() {
 
   return (
     <div className="mt-[300px] mb-[200px] flex flex-col relative gap-[50px] items-center">
-      <div className="text-2xl font-black">Let's Connect!</div>
+      <div className="text-2xl font-black">Let&apos;s Connect!</div>
 
       <div className="flex items-center relative w-full">
         <Separator className="w-[550px] bg-black" />
