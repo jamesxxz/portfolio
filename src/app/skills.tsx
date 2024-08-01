@@ -20,10 +20,12 @@ import { Icon } from "@iconify/react";
 
 export default function Skills() {
   return (
-    <div className="mt-[20px] mb-[30px] flex flex-col items-center">
-      <div className="text-2xl mr-[980px]">Skills</div>
-      <Separator className="w-[1100px] mt-5"></Separator>
-      <div className="w-[950px] h-[200px] mt-[50px]">
+    <div className="mt-[20px] mb-[30px] flex flex-col items-center px-4 sm:px-8 md:px-12 lg:px-0">
+      <div className="text-2xl lg:mr-[980px] mr-0 text-center lg:text-left">
+        Skills
+      </div>
+      <Separator className="lg:w-[1100px] w-full mt-5"></Separator>
+      <div className="lg:w-[950px] w-full lg:h-[200px] h-auto mt-[50px]">
         <Carousel
           plugins={[
             Autoplay({
@@ -34,16 +36,19 @@ export default function Skills() {
         >
           <CarouselContent>
             {tech_skills.map((skill) => (
-              <CarouselItem key={skill.title} className="basis-1/3">
+              <CarouselItem
+                key={skill.title}
+                className="basis-full sm:basis-1/2 md:basis-1/3"
+              >
                 <div>
-                  <Card className="h-[120px]">
-                    <CardHeader className="mt-[-10px]">
+                  <Card className="h-auto lg:h-[120px]">
+                    <CardHeader className="mt-0 lg:mt-[-10px]">
                       <CardTitle className="text-base font-black">
                         {skill.title}
                       </CardTitle>
                     </CardHeader>
                     <CardFooter className="mt-[10px]">
-                      <div className="flex gap-1">
+                      <div className="flex gap-1 justify-center lg:justify-start">
                         {skill.elems.map((elem) => (
                           <Icon
                             key={elem.name}

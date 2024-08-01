@@ -7,18 +7,17 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
 import { Separator } from "@/components/ui/separator";
 import { Microscope, Share2 } from "lucide-react";
 
 export default function About() {
   return (
     <div className="mt-[180px] mb-[30px] flex flex-col items-center">
-      <div className="text-2xl mr-[980px]">About Me</div>
-      <Separator className="w-[1100px] mt-5"></Separator>
+      <div className="text-2xl lg:mr-[980px] mr-0">About Me</div>
+      <Separator className="lg:w-[1100px] w-full mt-5"></Separator>
 
-      <div className="relative w-[950px] h-[600px] mt-[50px]">
-        <Card className="absolute top-0 left-0 w-[500px] h-[270px] z-10">
+      <div className="relative lg:w-[950px] w-full lg:h-[600px] h-auto mt-[50px] flex flex-col lg:flex-row lg:items-start items-center">
+        <Card className="lg:absolute static top-0 left-0 lg:w-[500px] w-full lg:h-[270px] h-auto z-10 mb-4 lg:mb-0">
           <CardHeader>
             <CardTitle className="text-xl flex flex-row gap-4">
               <Microscope />
@@ -36,7 +35,7 @@ export default function About() {
           </CardFooter>
         </Card>
 
-        <Card className="absolute top-[230px] left-[400px] w-[560px] h-[300px] z-20">
+        <Card className="lg:absolute static lg:top-[230px] top-0 lg:left-[400px] left-0 lg:w-[560px] w-full lg:h-[300px] h-auto z-20">
           <CardHeader>
             <CardTitle className="text-xl flex flex-row gap-4">
               <Share2 />
@@ -44,19 +43,19 @@ export default function About() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <Tabs defaultValue="LA" className="flex flex-row">
+            <Tabs defaultValue="LA" className="flex flex-col lg:flex-row">
               <div>
-                <TabsList className="w-[100px] h-[80px] ml-[10px] flex flex-col">
-                  <TabsTrigger className="w-[120px]" value="LA">
+                <TabsList className="lg:w-[100px] w-full lg:h-[80px] h-auto ml-[10px] flex lg:flex-col flex-row">
+                  <TabsTrigger className="lg:w-[120px] w-full" value="LA">
                     Course LA
                   </TabsTrigger>
-                  <TabsTrigger className="w-[120px]" value="SNL-Lab">
+                  <TabsTrigger className="lg:w-[120px] w-full" value="SNL-Lab">
                     SNL Lab
                   </TabsTrigger>
                 </TabsList>
               </div>
 
-              <div className="ml-[50px]">
+              <div className="lg:ml-[50px] ml-0 mt-4 lg:mt-0">
                 <TabsContent value="LA" className="text-sm">
                   <ul>
                     <li>
