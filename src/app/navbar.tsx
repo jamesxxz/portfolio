@@ -12,7 +12,7 @@ export default function NavBar() {
           smooth={true}
           duration={800}
           offset={-40}
-          className="text-muted-foreground transition-colors hover:text-foreground text-lg"
+          className="text-muted-foreground transition-colors hover:text-foreground text-lg hover:scale-110 transition duration-300"
         >
           About
         </Link>
@@ -21,7 +21,7 @@ export default function NavBar() {
           smooth={true}
           duration={800}
           offset={-40}
-          className="text-muted-foreground transition-colors hover:text-foreground text-lg"
+          className="text-muted-foreground transition-colors hover:text-foreground text-lg hover:scale-110 transition duration-300"
         >
           Skills
         </Link>
@@ -30,7 +30,7 @@ export default function NavBar() {
           smooth={true}
           duration={800}
           offset={-40}
-          className="text-muted-foreground transition-colors hover:text-foreground text-lg"
+          className="text-muted-foreground transition-colors hover:text-foreground text-lg hover:scale-110 transition duration-300"
         >
           Projects
         </Link>
@@ -38,7 +38,7 @@ export default function NavBar() {
           to="contacts"
           smooth={true}
           duration={800}
-          className="text-muted-foreground transition-colors hover:text-foreground text-lg"
+          className="text-muted-foreground transition-colors hover:text-foreground text-lg hover:scale-110 transition duration-300"
         >
           Contact Me
         </Link>
