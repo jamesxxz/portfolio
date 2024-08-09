@@ -33,7 +33,7 @@ export default function Projects() {
               shadcn/ui.
             </CardContent>
           </Card>
-          <div className="relative w-full h-[200px] z-10 md:w-[600px]">
+          <div className="relative w-full h-[200px] z-10 md:w-[600px] mb-[30px]">
             <button
               onClick={() =>
                 handleProjectClicked("https://github.com/jamesxxz/portfolio")
@@ -63,7 +63,7 @@ export default function Projects() {
                 and efficient management for lab administrators
               </CardContent>
             </Card>
-            <div className="relative w-full h-[200px] z-10 md:w-[600px]">
+            <div className="relative w-full h-[200px] z-10 md:w-[600px] mb-[30px]">
               <button
                 onClick={() =>
                   handleProjectClicked("https://github.com/ChrastilLab/Concord")
@@ -114,7 +114,7 @@ export default function Projects() {
             <CardHeader>
               <CardTitle className="text-lg">Direct Messaging chat</CardTitle>
             </CardHeader>
-            <CardContent className="text-sm mt-5">
+            <CardContent className="text-sm mt-5 mt-[1px]">
               A chatting GUI that interacts with the existing server and allows
               different users to exchange messages through internal commands
               supported by the server.

@@ -13,7 +13,7 @@ export default function Contacts() {
 
       <div className="flex flex-col sm:flex-row items-center relative w-full">
         <Separator className="w-full sm:w-[550px] bg-black" />
-        <div className="mt-4 sm:mt-0 sm:ml-20 flex gap-3 justify-center">
+        <div className="mt-2 sm:mt-0 sm:ml-20 flex gap-3 justify-center">
           <a
             className="hover:opacity-75 text-slate-800"
             onClick={() =>
@@ -49,7 +49,7 @@ export default function Contacts() {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center relative w-full justify-end">
-        <p className="mr-0 sm:mr-8 flex gap-2 flex-wrap justify-center">
+        <p className="mr-0 mb-2 sm:mr-8 flex gap-2 flex-wrap justify-center">
           <a href="mailto:jamesliu1027z@gmail.com" className="hover:underline">
             jamesliu1027z@gmail.com
           </a>
