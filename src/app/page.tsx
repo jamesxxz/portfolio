@@ -26,7 +26,7 @@ export default function Home() {
           <Contacts></Contacts>
         </Element>
       </main>
-      <footer className="mb-[30px] mr-[20px] flex justify-end">
+      <footer className="mb-[30px] mr-[20px] flex justify-end md:items-center">
         Copyright © 2024 Jyun Rong Liu. All Rights Reserved.
       </footer>
     </div>

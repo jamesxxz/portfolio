@@ -8,8 +8,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { useMediaQuery } from "react-responsive";
 
 export default function Projects() {
+  const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+
   function handleProjectClicked(projectUrl: string) {
     window.open(projectUrl, "_blank", "noopener,noreferrer");
   }
@@ -20,8 +23,8 @@ export default function Projects() {
       <Separator className="w-full md:w-[1100px] mt-5" />
       <div className="flex flex-col gap-[30px] md:gap-[110px] w-full md:w-[1000px] mt-[30px] md:mt-[50px]">
         {/* First Project */}
-        <div className="relative flex flex-col md:flex-row gap-4">
-          <Card className="absolute inset-0 md:relative w-full md:w-[500px] h-[210px] z-20 mb-4 md:mb-0 md:mr-[-50px] md:mt-[50px]">
+        <div className="relative flex flex-col gap-4 md:flex-row">
+          <Card className="relative w-full h-[210px] z-20 md:w-[500px] md:mr-[-50px] md:mt-[50px]">
             <CardHeader>
               <CardTitle className="text-lg">Personal Portfolio</CardTitle>
             </CardHeader>
@@ -30,7 +33,7 @@ export default function Projects() {
               shadcn/ui.
             </CardContent>
           </Card>
-          <div className="relative w-full md:w-[600px] h-[200px] z-10">
+          <div className="relative w-full h-[200px] z-10 md:w-[600px]">
             <button
               onClick={() =>
                 handleProjectClicked("https://github.com/jamesxxz/portfolio")
@@ -47,37 +50,67 @@ export default function Projects() {
         </div>
 
         {/* Second Project */}
-        <div className="relative flex flex-col md:flex-row gap-4">
-          <div className="relative w-full md:w-[600px] h-[200px] z-10">
-            <button
-              onClick={() =>
-                handleProjectClicked("https://github.com/ChrastilLab/Concord")
-              }
-              className="rounded-lg opacity-60 hover:opacity-100 transition-opacity duration-500 hover:shadow-2xl"
-            >
-              <img
-                src="concord.jpg"
-                alt="concord"
-                className="rounded-lg border w-full h-full object-cover"
-              />
-            </button>
+        {isMobile ? (
+          <div className="relative flex flex-col gap-4 md:flex-row">
+            <Card className="relative w-full h-[210px] z-20 md:w-[500px] md:mr-[-50px] md:mt-[50px]">
+              <CardHeader>
+                <CardTitle className="text-lg">Concord</CardTitle>
+                <CardDescription>UCI SNL</CardDescription>
+              </CardHeader>
+              <CardContent className="text-sm mt-[-5px]">
+                An all-in-one site designed for better organization and
+                accessibility of resources for research labs and their members,
+                and efficient management for lab administrators
+              </CardContent>
+            </Card>
+            <div className="relative w-full h-[200px] z-10 md:w-[600px]">
+              <button
+                onClick={() =>
+                  handleProjectClicked("https://github.com/ChrastilLab/Concord")
+                }
+                className="rounded-lg opacity-60 hover:opacity-100 transition-opacity duration-500 hover:shadow-2xl"
+              >
+                <img
+                  src="concord.jpg"
+                  alt="concord"
+                  className="rounded-lg border w-full h-full object-cover"
+                />
+              </button>
+            </div>
           </div>
-          <Card className="absolute inset-0 md:relative w-full md:w-[500px] h-[210px] z-20 md:ml-[-50px] mb-4 md:mb-0 md:mt-[50px]">
-            <CardHeader>
-              <CardTitle className="text-lg">Concord</CardTitle>
-              <CardDescription>UCI SNL</CardDescription>
-            </CardHeader>
-            <CardContent className="text-sm mt-[-5px]">
-              An all-in-one site designed for better organization and
-              accessibility of resources for research labs and their members,
-              and efficient management for lab administrators
-            </CardContent>
-          </Card>
-        </div>
+        ) : (
+          <div className="relative flex flex-col md:flex-row gap-4">
+            <div className="relative w-full md:w-[600px] h-[200px] z-10">
+              <button
+                onClick={() =>
+                  handleProjectClicked("https://github.com/ChrastilLab/Concord")
+                }
+                className="rounded-lg opacity-60 hover:opacity-100 transition-opacity duration-500 hover:shadow-2xl"
+              >
+                <img
+                  src="concord.jpg"
+                  alt="concord"
+                  className="rounded-lg border w-full h-full object-cover"
+                />
+              </button>
+            </div>
+            <Card className="absolute inset-0 md:relative w-full md:w-[500px] h-[210px] z-20 md:ml-[-50px] mb-4 md:mb-0 md:mt-[50px]">
+              <CardHeader>
+                <CardTitle className="text-lg">Concord</CardTitle>
+                <CardDescription>UCI SNL</CardDescription>
+              </CardHeader>
+              <CardContent className="text-sm mt-[-5px]">
+                An all-in-one site designed for better organization and
+                accessibility of resources for research labs and their members,
+                and efficient management for lab administrators
+              </CardContent>
+            </Card>
+          </div>
+        )}
 
         {/* Third Project */}
-        <div className="relative flex flex-col md:flex-row gap-4">
-          <Card className="absolute inset-0 md:relative w-full md:w-[500px] h-[210px] z-20 mb-4 md:mb-0 md:mr-[-50px] md:mt-[60px]">
+        <div className="relative flex flex-col gap-4 md:flex-row">
+          <Card className="relative w-full h-[210px] z-20 md:w-[500px] md:mr-[-50px] md:mt-[60px]">
             <CardHeader>
               <CardTitle className="text-lg">Direct Messaging chat</CardTitle>
             </CardHeader>
@@ -87,7 +120,7 @@ export default function Projects() {
               supported by the server.
             </CardContent>
           </Card>
-          <div className="relative w-full md:w-[600px] h-[100px] z-10">
+          <div className="relative w-full h-[100px] z-10 md:w-[600px]">
             <button
               onClick={() =>
                 handleProjectClicked(
