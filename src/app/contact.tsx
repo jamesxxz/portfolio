@@ -24,7 +24,7 @@ export default function Contacts() {
           >
             <Icon
               icon="mdi:linkedin"
-              className="size-12 hover:scale-125 duration-500"
+              className="size-12 hover:scale-125 duration-500" //
             />
           </a>
           <a
