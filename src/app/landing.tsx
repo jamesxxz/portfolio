@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Landing() {
   return (
@@ -7,8 +8,10 @@ export default function Landing() {
         <div className="lg:text-4xl text-2xl mb-[15px]">
           Hi, I&apos;m James Liu
         </div>
-        <div className="lg:text-lg text-base mb-[30px] lg:mb-[40px]">
-          Student developer at UC Irvine
+        <div className="lg:text-lg text-base mb-[30px] w-[300px]">
+          <TypeAnimation
+            sequence={["Full-Stack Student Engineer @ UC Irvine", 500]}
+          ></TypeAnimation>
         </div>
         <a
           href="https://docs.google.com/document/d/1AjS9IsPzXmmP--Isu-jyIxJGtTDwkeUDXxvzBY8AURc/edit?usp=sharing"

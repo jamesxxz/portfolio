@@ -13,7 +13,7 @@ export default function Contacts() {
 
       <div className="flex flex-col sm:flex-row items-center relative w-full">
         <Separator className="w-full sm:w-[550px] bg-black" />
-        <div className="mt-2 sm:mt-0 sm:ml-20 flex gap-3 justify-center">
+        <div className="mt-2 sm:mt-0 sm:ml-[68px] flex gap-4 justify-center">
           <a
             className="hover:opacity-75 text-slate-800"
             onClick={() =>
