@@ -26,11 +26,13 @@ export default function Projects() {
         <div className="relative flex flex-col gap-4 md:flex-row">
           <Card className="relative w-full h-[210px] z-20 md:w-[500px] md:mr-[-50px] md:mt-[50px]">
             <CardHeader>
-              <CardTitle className="text-lg">Personal Portfolio</CardTitle>
+              <CardTitle className="text-lg">VISTA</CardTitle>
+              <CardDescription>KPFF Consulting Engineers</CardDescription>
             </CardHeader>
-            <CardContent className="text-sm mt-5">
-              Personal website built with Next.js, React.js, TypeScript, and
-              shadcn/ui.
+            <CardContent className="text-sm mt-[-15px]">
+              An cross-platform desktop application using Godot Engine to
+              visualize structural building models under earthquake simulations,
+              thereby enhancing engineering workflows.
             </CardContent>
           </Card>
           <div className="relative w-full h-[200px] z-10 md:w-[600px] mb-[30px]">
@@ -41,8 +43,8 @@ export default function Projects() {
               className="rounded-lg opacity-60 hover:opacity-100 transition-opacity duration-500 hover:shadow-2xl"
             >
               <img
-                src="personal-web.jpg"
-                alt="personal portfolio"
+                src="vista.jpg"
+                alt="vista"
                 className="rounded-lg border w-full h-full object-cover"
               />
             </button>
@@ -57,7 +59,7 @@ export default function Projects() {
                 <CardTitle className="text-lg">Concord</CardTitle>
                 <CardDescription>UCI SNL</CardDescription>
               </CardHeader>
-              <CardContent className="text-sm mt-[-5px]">
+              <CardContent className="text-sm mt-[-15px]">
                 An all-in-one site designed for better organization and
                 accessibility of resources for research labs and their members,
                 and efficient management for lab administrators
@@ -99,7 +101,7 @@ export default function Projects() {
                 <CardTitle className="text-lg">Concord</CardTitle>
                 <CardDescription>UCI SNL</CardDescription>
               </CardHeader>
-              <CardContent className="text-sm mt-[-5px]">
+              <CardContent className="text-sm mt-[-15px]">
                 An all-in-one site designed for better organization and
                 accessibility of resources for research labs and their members,
                 and efficient management for lab administrators
@@ -112,26 +114,25 @@ export default function Projects() {
         <div className="relative flex flex-col gap-4 md:flex-row">
           <Card className="relative w-full h-[210px] z-20 md:w-[500px] md:mr-[-50px] md:mt-[60px]">
             <CardHeader>
-              <CardTitle className="text-lg">Direct Messaging chat</CardTitle>
+              <CardTitle className="text-lg">ZotFitness</CardTitle>
+              <CardDescription>BitHacks 2025</CardDescription>
             </CardHeader>
-            <CardContent className="text-sm mt-5 mt-[1px]">
-              A chatting GUI that interacts with the existing server and allows
-              different users to exchange messages through internal commands
-              supported by the server.
+            <CardContent className="text-sm mt-[-15px]">
+              A web UI that allows you to know how your heart, body, and
+              environment respond as you move during your workout in real time,
+              thereby helping you optimize every rep, push your limits safely
             </CardContent>
           </Card>
           <div className="relative w-full h-[100px] z-10 md:w-[600px]">
             <button
               onClick={() =>
-                handleProjectClicked(
-                  "https://github.com/jamesxxz/Direct-messaging-chat"
-                )
+                handleProjectClicked("https://github.com/jeremyunoz/ZotFitness")
               }
               className="rounded-lg opacity-60 hover:opacity-100 transition-opacity duration-500 hover:shadow-2xl"
             >
               <img
-                src="dm-chat.jpg"
-                alt="direct-messaging chat"
+                src="zotfitness.jpg"
+                alt="zotfitness"
                 className="rounded-lg border w-full h-full object-cover"
               />
             </button>
