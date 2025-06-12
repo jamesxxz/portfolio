@@ -38,7 +38,9 @@ export default function Projects() {
           <div className="relative w-full h-[200px] z-10 md:w-[600px] mb-[30px]">
             <button
               onClick={() =>
-                handleProjectClicked("https://github.com/jamesxxz/portfolio")
+                handleProjectClicked(
+                  "https://docs.google.com/presentation/d/1K6mFNMiugA1cJAXZDnKMnYStwO4NGRLO4JO7tR_--6g/edit?usp=sharing"
+                )
               }
               className="rounded-lg opacity-60 hover:opacity-100 transition-opacity duration-500 hover:shadow-2xl"
             >
