@@ -47,7 +47,7 @@ export default function Skills() {
                         {skill.title}
                       </CardTitle>
                     </CardHeader>
-                    <CardFooter className="mt-[10px]">
+                    <CardFooter className="mt-[8px]">
                       <div className="flex gap-1 justify-center lg:justify-start">
                         {skill.elems.map((elem) => (
                           <Icon
