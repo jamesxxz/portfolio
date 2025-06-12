@@ -32,7 +32,7 @@ export default function Projects() {
             <CardContent className="text-sm mt-[-15px]">
               An cross-platform desktop application using Godot Engine to
               visualize structural building models under earthquake simulations,
-              thereby enhancing engineering workflows.
+              thereby enhancing engineering workflows
             </CardContent>
           </Card>
           <div className="relative w-full h-[200px] z-10 md:w-[600px] mb-[30px]">

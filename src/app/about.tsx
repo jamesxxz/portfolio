@@ -43,30 +43,32 @@ export default function About() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <Tabs defaultValue="LA" className="flex flex-col lg:flex-row">
+            <Tabs defaultValue="KPFF" className="flex flex-col lg:flex-row">
               <div>
                 <TabsList className="lg:w-[100px] w-full lg:h-[80px] h-auto ml-[10px] flex lg:flex-col flex-row">
-                  <TabsTrigger className="lg:w-[120px] w-full" value="LA">
-                    Course LA
+                  <TabsTrigger className="lg:w-[120px] w-full" value="KPFF">
+                    SWE Intern
                   </TabsTrigger>
                   <TabsTrigger className="lg:w-[120px] w-full" value="SNL-Lab">
                     SNL Lab
+                  </TabsTrigger>
+                  <TabsTrigger className="lg:w-[120px] w-full" value="LA">
+                    Course LA
                   </TabsTrigger>
                 </TabsList>
               </div>
 
               <div className="lg:ml-[50px] ml-0 mt-4 lg:mt-0">
-                <TabsContent value="LA" className="text-sm">
+                <TabsContent value="KPFF" className="text-sm">
                   <ul>
                     <li>
-                      - Responsible for the course regarding programming with
-                      Python software libraries and object-oriented programming
+                      - Awarded 3rd place among 13 teams at ICS Project Expo for
+                      developing a 3D visualization tool to structural engineers
                     </li>
                     <br />
                     <li>
-                      - Provided support and feedback to students who have
-                      Python-related problems with class projects and
-                      assignments
+                      - Created dynamic animations of ground motion to simulate
+                      realistic building responses during seismic events
                     </li>
                   </ul>
                 </TabsContent>
@@ -81,6 +83,20 @@ export default function About() {
                       - Responsible for the front-end development in a
                       collaborative team and utilized React.js and other
                       technologies
+                    </li>
+                  </ul>
+                </TabsContent>
+                <TabsContent value="LA" className="text-sm">
+                  <ul>
+                    <li>
+                      - Responsible for the course regarding programming with
+                      Python software libraries and object-oriented programming
+                    </li>
+                    <br />
+                    <li>
+                      - Provided support and feedback to students who have
+                      Python-related problems with class projects and
+                      assignments
                     </li>
                   </ul>
                 </TabsContent>
