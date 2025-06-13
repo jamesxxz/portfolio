@@ -38,7 +38,7 @@ export const tech_skills = [
         ],
     },
     {
-        title: "Game/Moblile Development",
+        title: "Game/Mobile Development",
         elems: [
             {name: "godot", icon: "devicon-plain:godot"},
             {name: "swift", icon: "mdi:language-swift"},
